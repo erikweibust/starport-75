@@ -1,0 +1,11 @@
+---
+configuration: 
+  locales: en-US
+---
+- test: Launch request 
+- LaunchRequest:
+    - response.outputSpeech.ssml: Welcome to Star Port 75 Travel. How can I help you?
+---
+- test: Hello World intent 
+- HelloWorldIntent:
+    - response.outputSpeech.ssml: Have a stellar day!

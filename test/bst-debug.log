@@ -1,0 +1,28 @@
+2020-01-05T22:32:59.238Z error: bst-test            Error using bst-test on Node: v13.3.0
+2020-01-05T22:32:59.241Z error: bst-test            YAMLException: incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 2, column 23:
+    configuration: locales: en-US
+                          ^
+    at generateError (/usr/local/lib/node_modules/bespoken-tools/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:191:10)
+    at throwError (/usr/local/lib/node_modules/bespoken-tools/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:197:9)
+    at readBlockMapping (/usr/local/lib/node_modules/bespoken-tools/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:1045:9)
+    at composeNode (/usr/local/lib/node_modules/bespoken-tools/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:1378:12)
+    at readDocument (/usr/local/lib/node_modules/bespoken-tools/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:1538:3)
+    at loadDocuments (/usr/local/lib/node_modules/bespoken-tools/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:1594:5)
+    at Object.loadAll (/usr/local/lib/node_modules/bespoken-tools/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:1602:19)
+    at TestParser.parse (/usr/local/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/test/TestParser.js:138:30)
+    at TestRunner.parseContents (/usr/local/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:516:21)
+    at /usr/local/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:74:39
+2020-01-05T22:33:46.337Z error: bst-test            Error using bst-test on Node: v13.3.0
+2020-01-05T22:33:46.342Z error: bst-test            Error: The interaction model for your Alexa Skill could not be found under:
+./models/en-US.json
+Please provide the correct location of the Interaction Model.
+    at Function.Object.<anonymous>.InteractionModel.fromFile (/usr/local/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/model/InteractionModel.js:51:23)
+    at VirtualAlexaBuilder.Object.<anonymous>.VirtualAlexaBuilder.create (/usr/local/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/core/VirtualAlexa.js:164:57)
+    at VirtualAlexaInvoker.before (/usr/local/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/runner/VirtualAlexaInvoker.js:58:48)
+    at TestRunner.<anonymous> (/usr/local/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:151:25)
+    at Generator.next (<anonymous>)
+    at asyncGeneratorStep (/usr/local/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:1:192)
+    at _next (/usr/local/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:3:194)
+    at /usr/local/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:3:364
+    at new Promise (<anonymous>)
+    at TestRunner.<anonymous> (/usr/local/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:3:97)
