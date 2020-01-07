@@ -10,6 +10,8 @@ module.exports = {
         translation: {
             WELCOME_MSG: 'Welcome to Star Port 75 Travel. How can I help you?',
             HELLO_MSG: 'Have a stellar day!',
+            SCHEDULED_MSG: "I've got you down for a trip to {{destination}}, " +
+            "leaving on {{departureDate}} and returning {{returnDate}}",
             HELP_MSG: 'You can say hello to me! How can I help?',
             GOODBYE_MSG: 'Later!',
             REFLECTOR_MSG: 'You just triggered {{intentName}}',

@@ -37,7 +37,28 @@
                 {
                     "name": "AMAZON.FallbackIntent",
                     "samples": []
-                }
+                },
+                {
+                "name": "ScheduleTripIntent", 
+                "samples": [
+                    "schedule a trip to {destination} leaving {departureDate} and returning {returnDate}",
+                    "plan a trip between {departureDate} and {returnDate} to visit {destination}"
+                ], 
+                "slots": [
+                    {
+                        "name": "destination", 
+                        "type": "AMAZON.US_CITY"
+                    },
+                    {
+                        "name": "departureDate",
+                        "type": "AMAZON.DATE"
+                    },
+                    {
+                        "name": "returnDate",
+                        "type": "AMAZON.DATE"
+                    }
+                ]
+}
             ],
             "types": []
         }
