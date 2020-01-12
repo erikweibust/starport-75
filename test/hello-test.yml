@@ -1,6 +1,6 @@
 ---
 configuration: 
-  locales: en-US
+    locales: en-US
 ---
 - test: Launch request 
 - LaunchRequest:

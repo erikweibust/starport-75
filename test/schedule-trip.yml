@@ -1,15 +1,20 @@
 ---
 configuration: 
     locales: en-US
+
 ---
+
 - test: Schedule a trip
 - "Schedule a trip to Mercury leaving Friday and returning next Thursday":
-- response.outputSpeech.ssml: I've got you down for a trip to Mercury, leaving on Friday and returning next Thursday.
+    - response.outputSpeech.ssml: I've got you down for a trip to Mercury, leaving on Friday and returning next Thursday.
+
 ---
 - test: Plan a trip
 - "Plan a trip between June 9th and June 17th to visit Mars":
-- response.outputSpeech.ssml: I've got you down for a trip to Mars, leaving on June 9th and returning June 17th.
+    - response.outputSpeech.ssml: I've got you down for a trip to Mars, leaving on June 9th and returning June 17th.
+
 ---
 - test: Plan a trip (synonym)
 - "Plan a trip between June 9th and June 17th to visit the swift planet":
-- response.outputSpeech.ssml: I've got you down for a trip to Mercury, leaving on June 9th and returning June 17th.
+    - response.outputSpeech.ssml: I've got you down for a trip to Mercury, leaving on June 9th and returning June 17th.
+
