@@ -47,7 +47,7 @@
                 "slots": [
                     {
                         "name": "destination", 
-                        "type": "AMAZON.US_CITY"
+                        "type": "PLANETS"
                     },
                     {
                         "name": "departureDate",
@@ -60,7 +60,67 @@
                 ]
 }
             ],
-            "types": []
+            "types": [
+                {
+                    "name": "PLANETS",
+                    "values": [
+                        {
+                            "id": "MERCURY",
+                            "name": {
+                                "value": "Mercury"
+                            }
+                        },
+                        {
+                            "id": "VENUS",
+                            "name": {
+                                "value": "Venus"
+                            }
+                        },
+                        {
+                            "id": "EARTH",
+                            "name": {
+                                "value": "Earth"
+                            }
+                        },
+                        {
+                            "id": "MARS",
+                            "name": {
+                                "value": "Mars"
+                            }
+                        },
+                        {
+                            "id": "JUPITER",
+                            "name": {
+                                "value": "Jupiter"
+                            }
+                        },
+                        {
+                            "id": "SATURN",
+                            "name": {
+                                "value": "Saturn"
+                            }
+                        },
+                        {
+                            "id": "URANUS",
+                            "name": {
+                                "value": "Uranus"
+                            }
+                        },
+                        {
+                            "id": "NEPTUNE",
+                            "name": {
+                                "value": "Neptune"
+                            }
+                        },
+                        {
+                            "id": "PLUTO",
+                            "name": {
+                                "value": "Pluto"
+                            }
+                        }
+                    ]
+                }
+            ]
         }
     }
 }
