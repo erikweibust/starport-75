@@ -9,6 +9,9 @@ const i18n = require('i18next');
 // i18n strings for all supported locales
 const languageStrings = require('./languageStrings');
 
+// "source" the ScheduledIntentHandler
+const scheduledIntentHandler = require('./ScheduleTripIntentHandler');
+
 const LaunchRequestHandler = {
     canHandle(handlerInput) {
         return Alexa.getRequestType(handlerInput.requestEnvelope) === 'LaunchRequest';
@@ -164,6 +167,7 @@ exports.handler = Alexa.SkillBuilders.custom()
         CancelAndStopIntentHandler,
         FallbackIntentHandler,
         SessionEndedRequestHandler,
+        scheduledIntentHandler,
         IntentReflectorHandler)
     .addErrorHandlers(
         ErrorHandler)
